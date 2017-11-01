@@ -1,0 +1,298 @@
+= Componentization via Services
+
+% : subtitle
+%   in Ruby
+: author
+   Giovanni Sakti
+: institution
+   Starqle
+% : content-source
+%    id_ruby
+% : date
+%    2017-11-01
+: theme
+   starqle
+
+= What is Component?
+
+(('tag:center'))What is Component?
+
+== properties
+  : hide-title
+    true
+
+= What is Component?
+
+Something that is ((*independently*)) upgradeable and replaceable
+
+= Component
+
+In Microservices architecture, the component is ((*services*))
+
+= What is Service?
+
+(('tag:center'))Now, what is Service?
+
+== properties
+  : hide-title
+    true
+
+= What is Service?
+
+* A software
+* With a (or a set of) specific functionalities
+* Reusable by different clients for different purpose
+
+= Service Characteristics
+
+* It logically represents a business activity with specified outcome
+* It is self-contained
+* It is a black box for its consumers
+* It may consist of other underlying services
+
+= Service Characteristics
+
+* It logically represents a business activity with specified outcome
+* It is ((*self-contained*))
+* It is a black box for its consumers
+* It may consist of other underlying services
+
+= Self-contained
+
+Services are not directly brought into your codebase.
+
+= Self-contained
+
+Services should be called through remote calls.
+
+= API vs Services
+
+(('tag:center'))API vs Services
+
+== properties
+  : hide-title
+    true
+
+= API vs Services
+
+(('tag:center'))Anyone know the differences?
+
+== properties
+  : hide-title
+    true
+
+= API
+
+(('tag:center'))a set of subroutine definitions, protocols, and tools, which enables a software to connect to other software.
+
+= (Web) Services
+
+(('tag:center'))a type of API, which operates via web and almost exclusively use the HTTP protocol.
+
+= Back to Microservices
+
+(('tag:center'))Now we back to microservices
+
+== properties
+  : hide-title
+    true
+
+= Back to Microservices
+
+(('tag:center'))Now we back to ((*micro*))services
+
+== properties
+  : hide-title
+    true
+
+= Back to Microservices
+
+(('tag:center'))Notice that there is a word 'micro' in front of word microservices?
+
+== properties
+  : hide-title
+    true
+
+= Back to Microservices
+
+(('tag:center'))How small is 'micro' anyway?
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))How small can you go?
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))How fast your systems need to be
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))Small enough to be rewrite rather than reuse
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))Around 200, 500 or 1000 lines of code per service\n
+(('sub:Note: if it\'s this small, less emphasize about expertise in specific language'))
+
+== properties
+  : hide-title
+    true
+
+= Microservices in Real-life
+
+(('tag:center'))Microservices in Real-life
+
+== properties
+  : hide-title
+    true
+
+= Microservices in Real-life
+
+(('tag:center'))UNIX
+
+= UNIX
+
+  # rouge console
+
+  % ls
+
+We use ((*ls*)) to list directories in UNIX-based system
+
+= UNIX
+
+  # rouge console
+
+  % grep ruby
+
+We use ((*grep*)) to do a pattern matching
+
+= UNIX
+
+(('tag:center'))Yes, ((*grep*)) and ((*ls*)) are microservices
+
+== properties
+  : hide-title
+    true
+
+= UNIX
+
+You know that we can also do this right?
+
+  # rouge console
+
+  % ls | grep ruby
+
+= UNIX
+
+  # rouge console
+
+  % ls | grep ruby
+
+It means the result of ((*ls*)) become the input of ((*grep*))
+
+= UNIX
+
+  # rouge console
+
+  % ls | grep ruby
+
+It means "please show only files or directories, which contains 'ruby'"
+
+= UNIX
+
+  # rouge console
+
+  % ls | grep ruby
+
+This symbol: ((*|*)) is the pipe operator, it is the protocol that connects the two services
+
+= UNIX
+
+(('tag:center'))UNIX is one of the largest and most successful implementation of microservices architecture
+
+== properties
+  : hide-title
+    true
+
+= UNIX
+
+(('tag:center'))UNIX has 17 design rules, 3 of which strongly adhere to microservices architecture
+
+== properties
+  : hide-title
+    true
+
+= Rule of Modularity
+
+(('tag:center'))Write simple parts connected by clean interfaces
+
+= Rule of Simplicity
+
+(('tag:center'))Design for simplicity; add complexity only where you must
+
+= Rule of Parsimony
+
+(('tag:center'))Write a big program only when it is clear by demonstration that nothing else will do
+
+= UNIX Rules
+
+* Rule of Modularity
+* Rule of Simplicity
+* Rule of Parsimony
+
+= Designing Services
+
+(('tag:center'))Last note on designing services
+
+== properties
+  : hide-title
+    true
+
+= Designing Services
+
+(('tag:center'))This is an incremental / evolutionary journey
+
+== properties
+  : hide-title
+    true
+
+= Designing Services
+
+(('tag:center'))Don't have to be right the first time\n
+(('sub:Note: Trial & error but with written test!'))
+
+== properties
+  : hide-title
+    true
+
+= Explore Public Services
+
+(('tag:center'))Explore Public (Web) Services
+
+== properties
+  : hide-title
+    true
+
+= Thanks!
+
+(('tag:center'))Thanks!
+
+== properties
+  : hide-title
+    true
