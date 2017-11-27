@@ -23,11 +23,11 @@
 
 = What is Component?
 
-Something that is ((*independently*)) upgradeable and replaceable
+(('tag:center'))Something that is ((*independently*)) upgradeable and replaceable
 
 = Component
 
-In Microservices architecture, the component is ((*services*))
+(('tag:center'))In Microservices architecture, the component is ((*services*))
 
 = What is Service?
 
@@ -39,9 +39,9 @@ In Microservices architecture, the component is ((*services*))
 
 = What is Service?
 
-* A software
-* With a (or a set of) specific functionalities
-* Reusable by different clients for different purpose
+* A ((*software*))
+* With a (or a set of) ((*specific*)) functionalities
+* ((*Reusable*)) by different clients for different purpose
 
 = Service Characteristics
 
@@ -59,11 +59,11 @@ In Microservices architecture, the component is ((*services*))
 
 = Self-contained
 
-Services are not directly brought into your codebase.
+(('tag:center'))Services are ((*not*)) directly ((*brought*)) into your codebase.
 
 = Self-contained
 
-Services should be called through remote calls.
+(('tag:center'))Services should be called through ((*remote*)) calls.
 
 = API vs Services
 
@@ -83,11 +83,11 @@ Services should be called through remote calls.
 
 = API
 
-(('tag:center'))a set of subroutine definitions, protocols, and tools, which enables a software to connect to other software.
+(('tag:center'))a set of subroutine definitions, protocols, and tools, which enables a software to ((*connect*)) to other software.
 
 = (Web) Services
 
-(('tag:center'))a type of API, which operates via web and almost exclusively use the HTTP protocol.
+(('tag:center'))a type of API, which operates via ((*web*)) and almost exclusively use the HTTP protocol.
 
 = Back to Microservices
 
@@ -123,7 +123,7 @@ Services should be called through remote calls.
 
 = How Small?
 
-(('tag:center'))How small can you go?
+(('tag:center'))How ((*small*)) can you go?
 
 == properties
   : hide-title
@@ -131,7 +131,7 @@ Services should be called through remote calls.
 
 = How Small?
 
-(('tag:center'))How fast your systems need to be
+(('tag:center'))How ((*fast*)) your systems need to be
 
 == properties
   : hide-title
@@ -139,7 +139,7 @@ Services should be called through remote calls.
 
 = How Small?
 
-(('tag:center'))Small enough to be rewrite rather than reuse
+(('tag:center'))Small enough to be ((*rewrite*)) rather than reuse
 
 == properties
   : hide-title
@@ -149,6 +149,30 @@ Services should be called through remote calls.
 
 (('tag:center'))Around 200, 500 or 1000 lines of code per service\n
 (('sub:Note: if it\'s this small, less emphasize about expertise in specific language'))
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))Should we follow the numbers closely?
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))No.
+
+== properties
+  : hide-title
+    true
+
+= How Small?
+
+(('tag:center'))Focus more on ((*good*)) design principles.
 
 == properties
   : hide-title
@@ -224,7 +248,7 @@ This symbol: ((*|*)) is the pipe operator, it is the protocol that connects the 
 
 = UNIX
 
-(('tag:center'))UNIX is one of the largest and most successful implementation of microservices architecture
+(('tag:center'))UNIX is one of the ((*largest*)) and most ((*successful*)) implementation of microservices architecture
 
 == properties
   : hide-title
@@ -232,7 +256,7 @@ This symbol: ((*|*)) is the pipe operator, it is the protocol that connects the 
 
 = UNIX
 
-(('tag:center'))UNIX has 17 design rules, 3 of which strongly adhere to microservices architecture
+(('tag:center'))UNIX has 17 design rules, 3 of which strongly ((*adhere to microservices*)) architecture
 
 == properties
   : hide-title
@@ -240,15 +264,15 @@ This symbol: ((*|*)) is the pipe operator, it is the protocol that connects the 
 
 = Rule of Modularity
 
-(('tag:center'))Write simple parts connected by clean interfaces
+(('tag:center'))Write ((*simple parts*)) connected by ((*clean interfaces*))
 
 = Rule of Simplicity
 
-(('tag:center'))Design for simplicity; add complexity only where you must
+(('tag:center'))Design for ((*simplicity*)); add complexity only where you must
 
 = Rule of Parsimony
 
-(('tag:center'))Write a big program only when it is clear by demonstration that nothing else will do
+(('tag:center'))Write a big program only when it is clear by demonstration that ((*nothing else*)) will do
 
 = UNIX Rules
 
